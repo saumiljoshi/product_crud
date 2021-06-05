@@ -89,7 +89,7 @@ function validate() {
       alert('Please insert Brand-name');
     }
     if(Price.value == ""){
-      alert('arre bhar ghala thodi,bhau!!');
+      alert('please enter the price!!');
     }
     if(Display.value == ""){
       alert('please enter Display-price!!!');
