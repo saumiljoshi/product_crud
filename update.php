@@ -2,6 +2,13 @@
 include("dbconnection.php"); 
 //echo $_GET['id']; echo"<br/>";
  //echo $_GET ['Description'];echo"<br/>"; 
+ echo $_GET['image'];
+ 
+ 
+
+ 
+ 
+ 
  if(isset($_POST['edit'])){
 
    $id = $_GET['id'];  
@@ -47,18 +54,18 @@ include("dbconnection.php");
 <div class="container" class= "col-lg-12 m-auto" class="form-group">
     <form method="POST" action="" enctype="multipart/form-data">
     <label for="name">name:</label>
-    <input type="text" name="name" placeholder="insert your name here"   class="form-control"/><br/>
+    <input type="text" name="name" placeholder="insert your name here" value="<?php echo $_GET['name'];?>"  class="form-control"/><br/>
     <label for="category">category:</label>
-    <input type="text" name="category" placeholder="insert your data here" class="form-control"/><br/>
+    <input type="text" name="category" placeholder="insert your data here" value="<?php echo $_GET['category']; ?>" class="form-control"/><br/>
     <input type ="file" name="Uploadfile"/><br/>
     <label for="category">Brand:</label>
-    <input type="text" name="brand" placeholder="insert your data here"  class="form-control"/><br/>
+    <input type="text" name="brand" placeholder="insert your data here" value="<?php echo $_GET['brand']; ?>" class="form-control"/><br/>
     <label for="category">Price:</label>
-    <input type="text" name="Price" placeholder="insert your"  class="form-control"/><br/>
+    <input type="text" name="Price" placeholder="insert your" value="<?php echo $_GET['price']; ?>" class="form-control"/><br/>
     <label for="category">display_price:</label>
-    <input type="text" name="display_price" placeholder="insert" class="form-control"/><br/>
+    <input type="text" name="display_price" placeholder="insert" value="<?php echo $_GET['display_price']; ?>" class="form-control"/><br/>
     <label for="category">Description:</label>
-    <input type="textarea" name="description" placeholder="insert here"  class="form-control" style="width:200px; margin-right:100px; margin-bottom:10px; height:100px;" /><br/>
+    <input type="textarea" name="description" style="width: 500px; height: 50px;" placeholder="insert here"  value="<?php echo $_GET['description']; ?>" class="form-control" style="width:200px; margin-right:100px; margin-bottom:10px; height:100px;" /><br/>
     <input type="submit" name="edit" class="btn btn-primary" value="update"/><br/>
     </form>
 </div>

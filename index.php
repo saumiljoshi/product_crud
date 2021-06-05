@@ -47,7 +47,7 @@ if ($total > 0)
           <td><?php echo $result["display_price"]; ?></td>
           <td><?php echo $result["description"]; ?></td>
           <td><button class="btn-danger btn"><a class = "btn-delete-action" href = "delete.php?id=<?php echo $result["id"];?>" onclick="return del();">Delete</a></button></td>
-          <td><button class="btn-danger btn"><a class = "btn-edit-action" href = "update.php?id=<?php echo $result["id"];?>">Edit</button></a></td>
+          <td><button class="btn-danger btn"><a class = "btn-edit-action" href = "update.php?id=<?php echo $result["id"];?> && image=<?php echo $result["image"]; ?> && name=<?php echo $result["name"];?> && category=<?php echo $result["category"];?> && brand=<?php echo $result ["brand"];?> && price=<?php echo $result["price"]; ?> && display_price=<?php echo $result["display_price"]; ?> && description=<?php echo $result["description"];?>">Edit</button></a></td>
           </tr>
     <?php
     }
