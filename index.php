@@ -59,6 +59,7 @@ if ($total > 0)
     ?>
      
     </tbody>
+    <button class="btn-danger btn"><a class ="btn-create-action" href="create.php">Go to Create</a></button>
     </table>
     <script type="text/javascript"> 
          function del() {
